@@ -24,6 +24,26 @@
         "workflow",
         "sha-pin"
       ]
+    },
+    {
+      "name": "express-recon",
+      "description": "Inventory & audit harness for Express 4/5 route surfaces. Enumerate routes and middleware chains, flag unauthenticated endpoints.",
+      "version": "0.1.0",
+      "source": {
+        "source": "github",
+        "repo": "chiz0me/express-recon"
+      },
+      "homepage": "https://github.com/chiz0me/express-recon",
+      "license": "MIT",
+      "keywords": [
+        "express",
+        "security",
+        "audit",
+        "routes",
+        "middleware",
+        "authentication",
+        "static-analysis"
+      ]
     }
   ]
 }
