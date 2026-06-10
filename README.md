@@ -24,3 +24,14 @@ A Claude Code plugin marketplace.
 
 After installation, prompts like *"audit my workflows"*, *"pin my actions to
 SHAs"*, or *"upgrade my actions"* will route through the plugin automatically.
+
+## Catalog version sync
+
+Each plugin's version is the single source of truth in its own repo
+(`.claude-plugin/plugin.json`). The [`Sync plugin versions`](.github/workflows/sync-versions.yml)
+workflow mirrors those into `marketplace.json` daily (and on manual dispatch),
+opening a PR when anything changed — so the catalog never drifts from a release.
+
+This needs **Settings → Actions → General → Workflow permissions → "Allow GitHub
+Actions to create and approve pull requests"** enabled, so the workflow's token
+can open the sync PR.
